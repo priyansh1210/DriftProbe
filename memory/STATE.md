@@ -27,7 +27,8 @@ writing / presentation stage.
    They are deliberately not committed (`report/` is in the laptop's `.git/info/exclude`): the
    repo is public and a public copy could self-match in a similarity check before submission.
    The user filled in the author block (CSE(AI), Manipal Institute of Technology, Bengaluru);
-   `[Supervisor name]` in the acknowledgment and an AI-use disclosure are still open.
+   and the supervisor (Sowmya T). An AI-use disclosure is still open. `report/Similarity_Self_Check.pdf`
+   is a limited local overlap check, not a Turnitin result; no AI detector has been run.
    Plagiarism and AI-use self-check (not an independent service):
    https://claude.ai/artifact/CVqF53r7TVtDQ93A9uS6zH
 5. Doc discrepancies found while writing the report, not yet fixed in the repo:
