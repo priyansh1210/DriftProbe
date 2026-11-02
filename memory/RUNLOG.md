@@ -38,3 +38,4 @@ is recorded because exact clock times were not logged; runtimes are measured). R
 | 2026-10-28 (17) | laptop | tests | `pytest -q` | 19 s | 60 passed |
 | 2026-10-28 (18) | laptop | session end | explainer artifact backed up to docs/explainer/; STATE.md rewritten with a "Resume here" section | - | ok |
 | 2026-11-02 (1) | laptop | report | IEEE report built (python-docx, Word PDF export), tables generated from reports/multicity CSVs; `pytest -q` | 19 s tests | 10 pages, 9 tables, 6 figures, 35 references; 60 passed; report/ kept local on purpose (see STATE) |
+| 2026-11-02 (2) | laptop | report checks | overlap check on the user-edited report; `report/Similarity_Self_Check.pdf`; report PDF refreshed; scripts copied to report/tools/ | - | 6 % overall (8+ word runs, 24 limited sources, web not checked); no AI detector run; report/ stays local |

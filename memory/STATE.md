@@ -26,11 +26,20 @@ writing / presentation stage.
 4. **IEEE report (2026-11-02):** `report/IEEE_Report.docx` and `.pdf` exist on the laptop only.
    They are deliberately not committed (`report/` is in the laptop's `.git/info/exclude`): the
    repo is public and a public copy could self-match in a similarity check before submission.
-   The user filled in the author block (CSE(AI), Manipal Institute of Technology, Bengaluru);
-   and the supervisor (Sowmya T). An AI-use disclosure is still open. `report/Similarity_Self_Check.pdf`
-   is a limited local overlap check, not a Turnitin result; no AI detector has been run.
-   Plagiarism and AI-use self-check (not an independent service):
-   https://claude.ai/artifact/CVqF53r7TVtDQ93A9uS6zH
+   The user filled in the author block (CSE(AI), Manipal Institute of Technology, Bengaluru)
+   and the supervisor (Sowmya T) directly in the .docx, so **do not rebuild over it** with the
+   build script; the script keeps the placeholders. The body prose is unchanged from the AI draft
+   and the report has no AI-use disclosure yet.
+   - `report/Similarity_Self_Check.pdf`: 2-page limited overlap check, 6 % overall (runs of 8+
+     identical words, body prose only, against 17 project docs and 7 papers; 0 % for the papers).
+     It did not search the web or journals and is not a Turnitin result.
+   - No AI detector has been run, so there is no AI score. The authorship record (not for
+     submission) is at https://claude.ai/artifact/CVqF53r7TVtDQ93A9uS6zH
+   - Build scripts are in `report/tools/` (laptop only). `figs.py` and `build.py` run from the repo
+     root with `.venv` Python and `report/tools/pylib` on `PYTHONPATH`; `simcheck.py` and
+     `topdf.ps1` use system Python and Word.
+   - Next for the user: ask the supervisor or library for a real Turnitin report and the
+     college's rules on AI-assisted reports.
 5. Doc discrepancies found while writing the report, not yet fixed in the repo:
    - `docs/VIVA_PREP.md`: no-seasonal costs 23 %; `ablations.csv` gives +26.9 %.
    - `docs/PAPER.md`: says 59 tests; there are 60.
@@ -45,6 +54,12 @@ writing / presentation stage.
      higher query accuracy on Electricity, Airlines and Covertype.
 
 ## Publishability verdict given to the user
+
+Updated 2026-11-02: publishing is possible, but not with the current file. Conditions given: disclose
+the AI use (IEEE and arXiv both require it), rewrite in the author's own words, agree co-authorship
+and timing with the supervisor, check the venue's AI, prior-publication and anonymity rules (the
+repo is public), run a real similarity check, and confirm the bike-share data licences. Suggested
+order: capstone submission first, then a short workshop paper, then arXiv if the venue allows it.
 
 Workshop / applied-track ready (empirical study + negative result + probe). Not main-track
 without the journal-version items above.
