@@ -26,7 +26,10 @@ writing / presentation stage.
 4. **IEEE report (2026-11-02):** `report/IEEE_Report.docx` and `.pdf` exist on the laptop only.
    They are deliberately not committed (`report/` is in the laptop's `.git/info/exclude`): the
    repo is public and a public copy could self-match in a similarity check before submission.
-   The author block and acknowledgment still have highlighted placeholders to fill in.
+   The user filled in the author block (CSE(AI), Manipal Institute of Technology, Bengaluru);
+   `[Supervisor name]` in the acknowledgment and an AI-use disclosure are still open.
+   Plagiarism and AI-use self-check (not an independent service):
+   https://claude.ai/artifact/CVqF53r7TVtDQ93A9uS6zH
 5. Doc discrepancies found while writing the report, not yet fixed in the repo:
    - `docs/VIVA_PREP.md`: no-seasonal costs 23 %; `ablations.csv` gives +26.9 %.
    - `docs/PAPER.md`: says 59 tests; there are 60.
