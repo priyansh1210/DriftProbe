@@ -1,7 +1,7 @@
 # STATE (read first)
 
-Updated: 2026-10-28 23:05 by the laptop (Claude Code), end of session 1. Latest pushed commit
-before this update: `4b9f51f`. Tags: `clean-test-v1` (6b63a9b, frozen policy code),
+Updated: 2026-11-02 by the laptop (Claude Code), IEEE report session. Latest pushed commit
+before this update: `849b241`. Tags: `clean-test-v1` (6b63a9b, frozen policy code),
 `clean-test-v1.1` (7ed1f0a, + NYC data fix and rerun plumbing; policy code byte-identical).
 
 ## Resume here
@@ -20,8 +20,25 @@ writing / presentation stage.
      regression, online learners (River), a non-bike domain, an expensive-retraining setting,
      sensitivity to label delay and gate margin, a confirmatory test of probe without the
      significance test on new data.
-3. Two references still to confirm in `docs/PAPER.md`: the Cara volume/DOI (KBS 2024,
-   arXiv 2310.04216) and the KSWIN (Raab et al., Neurocomputing 2020) volume/pages.
+3. References confirmed 2026-11-02, still to be copied into `docs/PAPER.md`: Cara = KBS vol. 293,
+   art. 111610, 2024, doi:10.1016/j.knosys.2024.111610; KSWIN (Raab et al.) = Neurocomputing
+   vol. 416, pp. 340-351, 2020, doi:10.1016/j.neucom.2019.11.111.
+4. **IEEE report (2026-11-02):** `report/IEEE_Report.docx` and `.pdf` exist on the laptop only.
+   They are deliberately not committed (`report/` is in the laptop's `.git/info/exclude`): the
+   repo is public and a public copy could self-match in a similarity check before submission.
+   The author block and acknowledgment still have highlighted placeholders to fill in.
+5. Doc discrepancies found while writing the report, not yet fixed in the repo:
+   - `docs/VIVA_PREP.md`: no-seasonal costs 23 %; `ablations.csv` gives +26.9 %.
+   - `docs/PAPER.md`: says 59 tests; there are 60.
+   - `docs/EVALUATION.md`: probe 0.45 s / 9 % of a cycle; the clean runs give 0.41 s / about 8 %.
+   - "0.47 to 0.96" (Chicago v006 scaled error): not reproducible as stated; decision logs give
+     yearly means 0.578, 0.714, 0.816, 0.946 for 2020-2023.
+   - Casimiro et al. 2021 is the SAML workshop (ECSA 2021 Companion, CEUR vol. 2978), not ASYDE;
+     Casimiro et al. 2022 author order is Casimiro, Romano, Garlan, Rodrigues.
+   - PAPER's description of Shankar et al. (cadence depends on data, task, compute, staffing) is
+     not supported by the published text; it reports regular, often informally chosen cadences.
+   - PAPER's "higher accuracy than ADWIN/DDM" for Cara: that paper's Table 3 shows ADWIN with
+     higher query accuracy on Electricity, Airlines and Covertype.
 
 ## Publishability verdict given to the user
 
